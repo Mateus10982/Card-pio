@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="pizza.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+</head> 
+<body>
+    <div id="titulo"><h1>Cardápio</h1></div>
+    <div id="menu1"><div id="bolinhalaranja"></div> 
+<label face="verdana" size="3">Menu Semanal</label>
+   <br><label>Refeição</label><br>
+   <label >Almoço</label>
+      <select id="menu2" class="selects">
+        <option value=""></option>
+        <option value="Feijoada">Feijoada</option>
+        <option value="Frango">Frango</option>
+        <option value="Tropeiro">Tropeiro</option>
+      </select>
+      <label >Lanche</label>
+      <select id="menu3" class="selects">
+        <option value=""></option>
+        <option value="Misto quente">Misto quente</option>
+        <option value="Pão de queijo">Pão de queijo</option>
+        <option value="Iogurte caseiro">Iogurte caseiro</option>
+      </select><br>
+      <label >Janta</label>
+      <select id="menu4" class="selects"> 
+        <option value=""></option>
+        <option value="strogonoff">strogonoff</option>
+        <option value="Pizza">Pizza</option>
+        <option value="Hamburguer">Hamburguer</option>
+      </select>
+      <br><label>Dias da semana</label>
+      <select id="DiasSema" class="selects">
+        <option value=""></option>
+        <option value="Segunda1">Segunda-Feira</option>
+        <option value="Terca1">Terça-Feira</option>
+        <option value="Quarta1">Quarta-Feira</option>
+        <option value="Quinta1">Quinta-Feira</option>
+        <option value="Sexta1">Sexta-Feira</option>
+        <option value="Sabado1">Sábado</option>
+        <option value="Domingo1">Domingo</option>
+      </select>
+      <br>
+      <button id="enviarButton">Enviar</button>
+    </div>
+
+<div id="Semana">
+  |<table width="100%" height="100%">
+    <tr>
+        <td class="textSemana" colspan="1">
+            Segunda
+        </td>
+        <td class="textSemana" colspan="1">
+            Terça
+        </td>
+        <td class="textSemana" colspan="1">
+            Quarta
+        </td>
+        <td class="textSemana" colspan="1">
+            Quinta
+        </td>
+        <td class="textSemana" colspan="1">
+            Sexta
+        </td>
+        <td class="textSemana" colspan="1">
+            Sábado
+        </td>
+        <td class="textSemana" colspan="1">
+          Domingo
+      </td>
+    </tr>
+    <tr>
+        <td class="divtable">
+          <div  class="div333"><table  id="Segunda1" width="100%" height="100%">
+           </table>
+        </div>
+        </td>
+      
+        <td class="divtable">
+          <div class="div333"><table id="Terca1"  width="100%" height="100%">
+            </table>
+          </div>
+       </td>
+    
+      <td class="divtable">
+        <div class="div333"><table  id="Quarta1" width="100%" height="100%">
+         </table>
+        </div>
+     </td>
+    <td class="divtable">
+      <div class="div333" ><table  id="Quinta1" width="100%" height="100%">
+       </table>
+      </div>
+   </td>
+
+  </td>
+  <td class="divtable">
+    <div class="div333" ><table  id="Sexta1"  width="100%" height="100%">
+      </table>
+    </div>
+ </td>
+<td class="divtable">
+  <div class="div333"><table id="Sabado1"  width="100%" height="100%">
+  </table>
+  </div>
+</td>
+
+<td class="divtable">
+  <div   class="div333"><table id="Domingo1" width="100%" height="100%">
+   </table>
+  </div>
+</td>
+ 
+    </tr>
+    
+</table>
+</div>
+
+<div id="movimentodiv"></div>
+<div id="principalIMC">
+  <section id="imcccc">
+  <label>Digite seu peso</label>
+  <br>
+  <input type="number" class="ioiooo2" id="peso1"><br><br><br><br>
+  <label>Digite sua altura</label><br>
+  <input type="number" class="ioiooo2" id="altura1">
+  <br><br><br>
+  <button id="enviarIMC" class="ioiooo" onclick="calcular()">enviar</button>
+  <br><div id="resultado2"></div>
+</section>
+</div>
+<button  id="IMC" >IMC</button>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
